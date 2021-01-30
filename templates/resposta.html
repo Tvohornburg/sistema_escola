@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resposta</title>
+        <style>    
+        </style>
+    </head>
+
+
+
+    <body>
+        <a href="/">Inicio</a><br>
+                
+  
+        <h1>Resposta para Prova {{prova.ni}}</h1><br>
+        
+        
+        <form action=/salvar_resposta_aluno>
+            {% for i in prova.questoes %}
+                <input type="hidden" name = id_prova value="{{prova.ni}}">
+                <input type="hidden" name = matricula value="{{matricula}}">
+                ID Questão : {{i.ni}}<br> 
+                              
+                Resposta: <input type="text" name = resposta{{i.ni}}><br>
+            {% endfor %}
+        <input type = submit value = cadastrar>
+        
+        </form>
+
+
+
+
+    </body>
+
+</html>

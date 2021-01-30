@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questões</title>
+        <style>    
+        </style>
+    </head>
+
+
+
+    <body>
+        <a href="/">Inicio</a><br>
+        <a href="cadastrar_questoes">Cadastrar Questões</a><br>
+
+        
+  
+        <h1>Questões</h1><br>
+
+        {% for i in lista_questoes: %}
+            {{i.ni}}
+            {{i.pergunta}}<br>
+            Resposta: {{i.resposta_certa}} <br>          
+            <a href=/adicionar_na_prova?id_questao={{i.ni}}>Adicionar questão na prova</a>
+            <br><br><br><br>    
+            
+        {% endfor %}
+
+
+
+
+    </body>
+
+</html>

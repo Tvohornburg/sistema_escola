@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Peso</title>
+        <style>    
+        </style>
+    </head>
+
+
+
+    <body>
+        <a href="/">Inicio</a><br>
+        <a href="provas">Provas</a>
+        
+  
+        <h1>Provas</h1><br>
+
+        <form action=/mudar_peso>
+            Id da Prova: {{id_prova}}<br>
+            <input type="hidden" name = id_prova value = {{id_prova}}> 
+            Id da Questão: {{id_questao}}<br>
+            <input type="hidden" name = id_questao value = {{id_questao}}> 
+            Peso: <input type="number" name = peso><br>
+        <input type = submit value = Mudar>
+        
+        </form>
+
+
+
+
+    </body>
+
+</html>
